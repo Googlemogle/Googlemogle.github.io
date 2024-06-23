@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+}
+
+.container {
+	max-width: 390px;
+}
+
+.inner {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px 200px 200px;
+}
+
+.img {
+	width: 160px;
+	height: auto;
+	-webkit-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    align-self: auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center
+}
+
+.btn {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+	display: inline-block;
+	padding: 10px 30px;
+	border: none;
+	background: rgb(17, 165, 245);
+	border-radius: 8px;
+	color: #fff;
+	text-transform: uppercase;
+    
+	font-weight: 900;
+
+    font-style: normal;
+	transition: background .3s linear;
+}
+
+.btn:hover {
+	background: rgb(24, 255, 213);
+    color: rgba(14, 14, 14, 0.866);
+}
+
+.usercard {
+	text-align: center;
+}
